@@ -73,9 +73,9 @@ For a datapack to work, the folders need to be in a specific hierarchy. Below is
    data (folder)
      crafting (folder)
        recipes (folder)
-         datapackname.json
-         datapackname.json
-         datapackname.json
+         recipename.json
+         recipename.json
+         recipename.json
 ```
 Then, you will need to put the datapack inside your world's datapack folder:
 - Open "Roaming" directory. (For Windows: Win+R, then type %appdata%)
