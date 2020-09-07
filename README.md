@@ -14,7 +14,7 @@ This file contains information about the datapack elements. Every line is a sepa
   - If it is a shaped recipe (1), the crafting pattern must follow:
     - It must be a 9-digit key for all slots on a crafting table; left to right, top to bottom.
     - Keys must be numbers, starting from 0: 0, 1, 2, 3...
-    - For empty slots, there must be a capital X.
+    - For empty slots, there must be a lowercase/uppercase letter X.
     - For instance "0X00000X0" is a letter H in the crafting grid.
     - See the examples for more information.
 - Then the ingredients must follow. Use Minecraft name IDs without the "minecraft:" prefix.
