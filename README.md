@@ -38,11 +38,13 @@ This file contains information about the datapack elements. Every line is a sepa
   - 1 -> stick
 - stone_axe: The recipe is for stone axe
 - 1: The recipe gives 1 stone axe
+
 0 iron_ingot iron_nugget 9
 - 0: Shapeless crafting
 - iron_ingot: The ingredient
 - iron_nugget: The recipe is for iron nuggets
 - 9: The recipe gives 9 iron nuggets
+
 0 white_dye gravel gravel gravel gravel sand sand sand sand white_concrete_powder 8
 - 0: Shapeless crafting
 - gravel ... sand: The ingredients
@@ -51,25 +53,30 @@ This file contains information about the datapack elements. Every line is a sepa
 
 #### Example recipes.txt
 You can simply put every recipe into new lines:
-> 1 00X01XX1X cobblestone stick stone_axe 1
-> 0 iron_ingot iron_nugget 9
-> 0 white_dye gravel gravel gravel gravel sand sand sand sand white_concrete_powder 8
+```
+1 00X01XX1X cobblestone stick stone_axe 1
+0 iron_ingot iron_nugget 9
+0 white_dye gravel gravel gravel gravel sand sand sand sand white_concrete_powder 8
+```
 
 
 ### The script
 This script works on Python and dependent on 3 libraries: **json** for converting Python dictionary into a JSON text, **os** for managing directories, and **glob** for reading the output file directory. Once it is all set up, **make sure that recipes.txt is in the same directory with crafting_generator.py!**
+
 Call **datapack()** to read recipes.txt and generate the datapacks. All separate JSON files will be exported in a folder named Output in the same directory. (If such directory does not exist, the function will create it.
 
 ### Setting up the datapack
 For a datapack to work, the folders need to be in a specific hierarchy. Below is a sample file directory, which you can find in this repository.
-> datapackname (folder)
->   pack.mcmeta (see below for explanation)
->   data (folder)
->     crafting (folder)
->       recipes (folder)
->         datapackname.json
->         datapackname.json
->         datapackname.json
+```
+ datapackname (folder)
+   pack.mcmeta (see below for explanation)
+   data (folder)
+     crafting (folder)
+       recipes (folder)
+         datapackname.json
+         datapackname.json
+         datapackname.json
+```
 Then, you will need to put the datapack inside your world's datapack folder:
 - Open "Roaming" directory. (For Windows: Win+R, then type %appdata%)
 - Go to .minecraft
@@ -87,5 +94,7 @@ This is a file that holds meta information of your datapack: e.g. its name and d
 
 ## Credits
 I hope you find this tool useful. Thanks to Animagician for the idea!
+
 All code is written by me, Berke Filiz.
+
 Feel free to use the script, as long as you credit to this Github repository.
