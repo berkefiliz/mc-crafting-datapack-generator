@@ -1,0 +1,1 @@
+When creating a datapack, replace this file with the newly generated JSON files.
