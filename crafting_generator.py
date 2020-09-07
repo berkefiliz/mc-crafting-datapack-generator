@@ -39,7 +39,7 @@ def createIngredients(items):
 def extractPattern(pattern):
     # Turn X to space
     def eliminateX(char):
-        if char == "X":
+        if char.upper() == "X":
             return " "
         return char
     
